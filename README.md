@@ -17,7 +17,6 @@ Examples for UWB based posture recognition for human robot interaction
 Clone this repo 
 ```
 git clone git@github.com:salmasalimii/UWB-based-posture-recognition.git
-
 ```
 
 
@@ -25,7 +24,13 @@ git clone git@github.com:salmasalimii/UWB-based-posture-recognition.git
 ## Machine Learning Models Used
 
 ### K-Nearest Neighbors (KNN)
-The KNN model classifies each posture by comparing the UWB data with the closest matching examples in the dataset. This model is simple yet effective for recognizing distinct postures based on proximity to known data points.
+```
+from sklearn.neighbors import KNeighborsClassifier
+
+knn = KNeighborsClassifier(n_neighbors=2)
+knn.fit(x_train,y_train)
+pred = knn.predict(x_test)
+```
 
 ### Support Vector Machine (SVM)
 The SVM model separates different postures by finding the optimal boundary between classes in the UWB feature space. It is designed to maximize the margin between posture classes, ensuring robust classification.
