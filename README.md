@@ -33,9 +33,21 @@ pred = knn.predict(x_test)
 ```
 
 ### Support Vector Machine (SVM)
-The SVM model separates different postures by finding the optimal boundary between classes in the UWB feature space. It is designed to maximize the margin between posture classes, ensuring robust classification.
+```
+from sklearn.svm import SVC
+
+model = SVC()
+model.fit(x_train, y_train)
+predictions = model.predict(x_test)
+```
 
 ### Multi-Layer Perceptron (MLP)
-The MLP model uses a feed-forward neural network with multiple layers to learn complex patterns in the UWB data, enabling it to distinguish between different postures with greater flexibility and accuracy.
+```
+from sklearn.neural_network import MLPClassifier
+
+mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=1000, random_state=42)
+mlp.fit(x_train, y_train)
+predictions = mlp.predict(x_test)
+```
 
 The detailed code for implementing these models is available upon request.
