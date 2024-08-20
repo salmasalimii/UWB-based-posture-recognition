@@ -16,4 +16,7 @@ Examples for UWB based posture recognition for human robot interaction
 
 Clone this repo 
 ```
-git clone git@github.com:TIERS/ros2-fabric-integration.git
+git clone git@github.com:salmasalimii/UWB-based-posture-recognition.git
+
+
+
