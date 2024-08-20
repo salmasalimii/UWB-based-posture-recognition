@@ -9,4 +9,4 @@ This work introduces a UWB range dataset featuring five distinct individuals in 
 
 Examples for UWB based posture recognition for human robot interaction
 
-![](fig/ros2fabric.png)
+![](fig/ros2fabric[https://github.com/user-attachments/files/16673596/main_diagram.pdf]
