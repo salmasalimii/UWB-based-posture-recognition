@@ -18,6 +18,8 @@ Clone this repo
 ```
 git clone git@github.com:salmasalimii/UWB-based-posture-recognition.git
 
+```
+
 
 
 ## Machine Learning Models Used
